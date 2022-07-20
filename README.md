@@ -8,7 +8,7 @@ This project is for coding task from SCB. It service two APIs with spring boot a
 ### Quick Start
 cd to the root directory of the project
 
-`cd codingtask`
+`cd CodingTask`
 
 and then issue command:
 
@@ -20,7 +20,7 @@ The command will run the service on localhost at port 80 and it is ready to acce
 
 cd to the root directory of the project 
 
-`cd codingtask`
+`cd CodingTask`
 
 and issue
 
@@ -32,7 +32,7 @@ This command will build the project into Jar packages
 
 cd to root directory of the project 
 
-`cd codingtask`
+`cd CodingTask`
 
 and issue
 
@@ -42,7 +42,7 @@ and issue
 
 cd to root directory of the project
 
-`cd codingtask`
+`cd CodingTask`
 
 and issue
 
@@ -52,7 +52,7 @@ and issue
 
 cd to root directory of the project
 
-`cd codingtask`
+`cd CodingTask`
 
 And use the following bash command
 
