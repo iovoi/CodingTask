@@ -1,4 +1,4 @@
-package com.experiement.www.codingtask;
+package com.experiment.www.codingtask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

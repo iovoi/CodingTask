@@ -1,4 +1,4 @@
-package com.experiement.www.codingtask.controller;
+package com.experiment.www.codingtask.controller;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
-import com.experiement.www.codingtask.service.EnrichTradeService;
+import com.experiment.www.codingtask.service.EnrichTradeService;
 
 @RestController
 @RequestMapping("/api/v1")

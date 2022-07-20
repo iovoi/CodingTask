@@ -1,4 +1,4 @@
-package com.experiement.www.codingtask;
+package com.experiment.www.codingtask;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
@@ -11,17 +11,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 
-import com.experiement.www.codingtask.controller.EnrichController;
-import com.experiement.www.codingtask.controller.IndexController;
+import com.experiment.www.codingtask.controller.EnrichController;
+import com.experiment.www.codingtask.controller.IndexController;
 
-@SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class CodingtaskApplicationTests {
-	//@LocalServerPort
-	//private int port;
+	@LocalServerPort
+	private int port;
 
 	@Autowired
 	private EnrichController enrichController;
@@ -41,7 +42,7 @@ class CodingtaskApplicationTests {
 
 	@Test
 	void nomalCaseTest() {
-		final String baseUrl = "http://localhost:8080/api/v1/enrich";
+		final String baseUrl = "http://localhost:" + this.port + "/api/v1/enrich";
 		URI uri;
 		try {
 			uri = new URI(baseUrl);
@@ -65,7 +66,7 @@ class CodingtaskApplicationTests {
 
 	@Test
 	void voidCaseTest() {
-		final String baseUrl = "http://localhost:8080/api/v1/enrich";
+		final String baseUrl = "http://localhost:" + this.port + "/api/v1/enrich";
 		URI uri;
 		try {
 			uri = new URI(baseUrl);

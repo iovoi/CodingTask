@@ -1,4 +1,4 @@
-package com.experiement.www.codingtask.controller;
+package com.experiment.www.codingtask.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
